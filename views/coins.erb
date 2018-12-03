@@ -1,2 +1,26 @@
-Here are the coins you need:<br>
-<%= coins %>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Here are the coins you need:<br>
+<br>
+<% coins.each do |key, value| %>
+  <% if key == :quarter %>
+    <img src = "/images/quarter.jpg">
+  <% elsif key == :dime %>
+    <img src = "/images/dime.jpg">
+  <% elsif key == :nickel %>
+    <img src = "/images/nickel.jpg">
+  <% else %>
+    <img src = "/images/penny.jpg">
+  <% end %>
+
+  <% if value > 1 %>
+    <li><%= "#{key.capitalize}'s: #{value}" %></li>
+  <% else %>
+    <li><%= "#{key.capitalize}: #{value}" %></li>
+  <% end %>
+<% end %>
+</h1>
+</body

@@ -1,9 +1,9 @@
 
 body {
-  background-image: url(/images/piggy.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #32CD32;
+  text-align: center;
 }
 
 input[type=number] {
@@ -24,13 +24,17 @@ input[type=submit] {
     height: 40px;
     background:#32CD32;
     border:0 none;
-    cursor:pointer;
+    cursor:pointer;#32CD32;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     font-size: 29px;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-form {
-  text-align: center;
+
+img {
+  height: 80px;
+  width: 80px;
+  border-color: #32CD32;
+  border-radius: 50%;
 }
